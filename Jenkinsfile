@@ -31,8 +31,11 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                sh 'sshpass -p "hanuman" scp target/gamutgurus.war ram@172.17.0.2:/home/ram/distros/apache-tomcat-9.0.85/webapps'
-                sh 'sshpass -p "hanuman" ssh ram@172.17.0.2 "/home/ram/distros/apache-tomcat-9.0.85/bin/startup.sh"'
+                docker start tomcat-server-qa
+                docker exec -i tomcat-server-qa /etc/init.d/ssh start
+                sh 'sshpass -p "lion" scp target/gamutgurus.war lion@172.17.0.2:/home/lion/distros/apache-tomcat-9.0.86/webapps'
+                sh 'sshpass -p "lion" ssh lion@172.17.0.2 "/home/lion/distros/apache-tomcat-9.0.86/bin/startup.sh"'
+                
             }
         }
     }
