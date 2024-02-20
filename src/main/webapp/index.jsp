@@ -40,7 +40,7 @@
 			</ul>
 			<div id="tabs-1">
 				<p>https://en.wikipedia.org/wiki/DevOps</p>
-				<p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.</p>
+				<p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. Devops is very popular and easy to learn.  </p>
 				<p>From an academic perspective, Len Bass, Ingo Weber, and Liming Zhu — three computer science researchers from the CSIRO and the Software Engineering Institute — suggested defining DevOps as "a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality".</p>
 			</div>
 			<div id="tabs-2">
