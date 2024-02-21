@@ -37,8 +37,8 @@ pipeline {
         stage('Deployment') {
             steps {
                
-                sh 'sshpass -p "lion" scp target/gamutgurus.war lion@$echo hostname -i:/home/lion/distros/apache-tomcat-9.0.86/webapps'
-                sh 'sshpass -p "lion" ssh lion@$echo hostname -i "/home/lion/distros/apache-tomcat-9.0.86/bin/startup.sh"'
+                sh 'sshpass -p "lion" scp target/gamutgurus.war lion@172.17.0.2:/home/lion/distros/apache-tomcat-9.0.86/webapps'
+                sh 'sshpass -p "lion" ssh lion@172.17.0.2 "/home/lion/distros/apache-tomcat-9.0.86/bin/startup.sh"'
                 
             }
         }
