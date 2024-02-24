@@ -29,8 +29,8 @@ pipeline {
             }
         }
          stage('Run') {
-             steps {
-             sh 'docker exec -i tomcat-server-qa service ssh start'
+             steps { 
+             sh 'docker exec -i tomcat-server-qa /etc/init.d/ssh start'
              
             }
        }
