@@ -31,14 +31,15 @@ pipeline {
          stage('Run') {
              steps {
              sh 'docker exec -i tomcat-server-qa service ssh start'
+             
             }
        }
 
         stage('Deployment') {
             steps {
                
-                sh 'sshpass -p "lion" scp target/gamutgurus.war lion@172.17.0.2:/home/lion/distros/apache-tomcat-9.0.86/webapps'
-                sh 'sshpass -p "lion" ssh lion@172.17.0.2 "/home/lion/distros/apache-tomcat-9.0.86/bin/startup.sh"'
+                sh 'sshpass -p "hari" scp target/gamutgurus.war hari@172.17.0.3:/home/hari/distros/apache-tomcat-9.0.85/webapps'
+                sh 'sshpass -p "hari" ssh hari@172.17.0.3 "/home/hari/distros/apache-tomcat-9.0.85/bin/startup.sh"'
                 
             }
         }
