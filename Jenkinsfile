@@ -44,8 +44,6 @@ pipeline {
                 
             }
         }
-         stage('Notification') {
-             step {
-               emailext body: 'hii developer, please condider this email priority.', subject: 'Build Status', to: 'kolimadhav2012@gmail.com'
-    }
+        
+   }
 }
