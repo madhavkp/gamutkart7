@@ -14,6 +14,7 @@ public class App
    		}
 	    for(j=0;j<=50;j++)
 	    {
-                 j += 5; 			    
+                 j += 5; 		
+		 j -=5;
 	 }
 }
