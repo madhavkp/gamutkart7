@@ -16,5 +16,6 @@ public class App
 	    {
                  j += 5; 		
 		 j -=5;
+		 int k =0;
 	 }
 }
